@@ -39,5 +39,16 @@ export class RickAndMortyService {
       });
     });
   }
+
+  getAllLocations(){
+    return new Promise(resolver => {
+      this.http.get(this.api_url+'/location').subscribe(resp => {
+        console.log(resp);
+        resolver(resp);
+      }, err=> {
+        console.log(err);
+      });
+    });
+  }
 }
 

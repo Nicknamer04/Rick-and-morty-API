@@ -16,7 +16,7 @@ export class AllCharactersComponent implements OnInit {
   constructor(
     private randmService: RickAndMortyService,
     private modalController: ModalController
-    ) { }
+  ) { }
 
   ngOnInit() {
     this.randmService.getAllCharacters().then( (res: any) => {
