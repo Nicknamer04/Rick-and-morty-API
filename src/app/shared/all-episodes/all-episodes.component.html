@@ -1,0 +1,19 @@
+
+<ion-content *ngIf="allEpisodes">
+  <ion-list>
+    <ion-list-header>
+      Listado de episodios
+    </ion-list-header>
+
+    <ion-item *ngFor = "let episodes of allEpisodes.results" (click) = "openModal(episodes)">
+      <ion-avatar slot="start">
+        <img src="..\..\..\assets\icon\rick and morty.jpg">
+      </ion-avatar>
+
+      <ion-label>
+        <h2>{{ episodes.name }}</h2>
+        <h3>Numero episodio: {{ episodes.episode }}</h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

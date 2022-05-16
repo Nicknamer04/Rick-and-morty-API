@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-label>DETALLE DEL EPISODIO</ion-label>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="episodedetail">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="logo">
+        <ion-img src="..\..\..\assets\icon\rick and morty.jpg" style="width:40%"></ion-img>
+      </ion-col>
+    </ion-row>
+      <ion-col>
+        <h3><b>Nombre: </b> {{ episodes.name }}</h3>
+        <h3><b>Fecha al aire: </b> {{ episodes.air_date }}</h3>
+        <h3><b>Numero episodio: </b> {{ episodes.episode }}</h3>
+        <h3><b>Creacion: </b> {{ episodes.created }}</h3>
+      </ion-col>
+    <ion-row>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>
